@@ -131,8 +131,10 @@ p {
 /*************************************/
 
 .navbar {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 0 1em;
   transition: all 0.3s;
-  display: none;
 }
 
 .nav__link {
@@ -259,10 +261,6 @@ p {
 /* GALLERY STYLES */
 /*************************************/
 
-.gallery {
-  display: none;
-}
-
 .gallery__item {
   max-width: 100%;
 }
@@ -305,13 +303,13 @@ p {
 /* MEDIA QUERIES */
 /*************************************/
 
-@media screen and (min-width: 600px) {
-  .navbar {
-    display: flex;
-    justify-content: space-around;
-    margin: 2em 0 1em;
+@media screen and (max-width: 599px) {
+  .quote {
+    font-size: 1.5em;
   }
+}
 
+@media screen and (min-width: 600px) {
   .project__overlay {
     background-color: rgba(254, 217, 0, 0.9);
     width: 100%;

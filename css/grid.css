@@ -10,6 +10,12 @@
     grid-auto-flow: dense;
   }
 
+  @media screen and (max-width: 599px) {
+    .grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+
   @media screen and (min-width: 600px) {
     .gallery {
       display: grid;
