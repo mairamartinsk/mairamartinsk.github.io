@@ -175,7 +175,7 @@ p {
 .section__link::after {
   content: "";
   display: block;
-  height: 3px;
+  height: 2px;
   width: 48px;
   background: var(--yellow);
   transition: all 150ms ease-out;
@@ -184,7 +184,7 @@ p {
 }
 
 .section--colored .section__link::after {
-  background: var(--white);
+  background: var(--lightgray);
 }
 
 .section__link:hover::after {
@@ -212,7 +212,15 @@ p {
 .link--inline {
   color: var(--black);
   text-decoration: none;
-  border-bottom: 2px solid var(--lightgray);
+  display: inline-block;
+}
+
+.link--inline::after {
+  content: none;
+}
+
+.link--inline:hover {
+  color: var(--white);
 }
 
 /*************************************/
