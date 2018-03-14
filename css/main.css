@@ -1,15 +1,4 @@
 /*************************************/
-/* CSS VARIABLES */
-/*************************************/
-
-:root {
-  --yellow: #fed900;
-  --white: #fff;
-  --lightgray: #f7f7f7;
-  --black: #000;
-}
-
-/*************************************/
 /* BASE SETTINGS */
 /*************************************/
 
@@ -45,8 +34,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--black);
-  background-color: var(--white);
+  color: #000;
+  background-color: #fff;
 }
 
 h1,
@@ -74,7 +63,7 @@ p {
 
 .header {
   padding: 10px 0 20px;
-  background-color: var(--lightgray);
+  background-color: #f7f7f7;
 }
 
 .logo {
@@ -88,14 +77,14 @@ p {
 }
 
 .logo--M {
-  background-color: var(--yellow);
-  color: var(--black);
+  background-color: #fed900;
+  color: #000;
   padding: 5px;
 }
 
 .logo--K {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: #000;
+  color: #fff;
   padding: 5px;
 }
 
@@ -112,7 +101,7 @@ p {
 }
 .hero__title {
   font-family: "Libre Baskerville", serif;
-  color: var(--lightgray);
+  color: #f7f7f7;
   font-size: 3em;
   margin-top: 100px;
   opacity: 0;
@@ -138,7 +127,7 @@ p {
 }
 
 .nav__link {
-  color: var(--black);
+  color: #000;
   font-size: 1em;
   font-weight: 700;
   text-decoration: none;
@@ -146,7 +135,7 @@ p {
 }
 
 .nav__link:hover {
-  color: var(--yellow);
+  color: #fed900;
 }
 
 /*************************************/
@@ -166,7 +155,7 @@ p {
 .section__link {
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--black);
+  color: #000;
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 3;
@@ -177,14 +166,14 @@ p {
   display: block;
   height: 2px;
   width: 48px;
-  background: var(--yellow);
+  background: #fed900;
   transition: all 150ms ease-out;
   bottom: 0;
   left: 0;
 }
 
 .section--colored .section__link::after {
-  background: var(--lightgray);
+  background: #f7f7f7;
 }
 
 .section__link:hover::after {
@@ -192,7 +181,7 @@ p {
 }
 
 .section--colored {
-  background-color: var(--yellow);
+  background-color: #fed900;
 }
 
 .section__title::after {
@@ -200,17 +189,17 @@ p {
   display: block;
   width: 68px;
   height: 8px;
-  background: var(--yellow);
+  background: #fed900;
   margin-top: 7px;
   margin-left: -33px;
 }
 
 .section--colored .section__title::after {
-  background: var(--white);
+  background: #fff;
 }
 
 .link--inline {
-  color: var(--black);
+  color: #000;
   text-decoration: none;
   display: inline-block;
 }
@@ -220,7 +209,7 @@ p {
 }
 
 .link--inline:hover {
-  color: var(--white);
+  color: #f7f7f7;
 }
 
 /*************************************/
@@ -243,7 +232,7 @@ p {
 
 .project__title,
 .project__desc {
-  color: var(--black);
+  color: #000;
 }
 
 /*************************************/
@@ -278,8 +267,8 @@ p {
 /*************************************/
 
 .footer {
-  background-color: var(--black);
-  color: var(--lightgray);
+  background-color: #000;
+  color: #f7f7f7;
   text-align: center;
   padding: 1em;
 }
@@ -300,11 +289,11 @@ p {
 
 .social__link {
   font-size: 1.5em;
-  color: var(--lightgray);
+  color: #f7f7f7;
 }
 
 .social__link:hover {
-  color: var(--yellow);
+  color: #fed900;
 }
 
 /*************************************/
