@@ -367,3 +367,14 @@ p {
     display: none;
   }
 }
+
+@media screen and (-ms-high-contrast: active) and (max-width: 600px),
+  screen and (-ms-high-contrast: none) and (max-width: 600px) {
+  .grid__item {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .gallery__item {
+    width: 50%;
+  }
+}
