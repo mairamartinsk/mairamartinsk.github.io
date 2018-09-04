@@ -82,7 +82,7 @@ function getProjects() {
     li.className = 'grid__item';
 
     li.innerHTML = `
-      <a href=${project.url} class="project__link" target="_blank">
+      <a href=${project.url} class="project__link" target="_blank" rel="noopener">
         <img src=${project.image} class="project__image" alt="Screenshot of ${project.name}">
         <div class="project__overlay">
           <h3 class="project__title">${project.name}</h3>
