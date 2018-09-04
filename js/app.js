@@ -1,6 +1,24 @@
 function getProjects() {
   const projects = [
     {
+      "name": "Neighbourhood Maps",
+      "desc": "React.js, Create-React-App, Google Maps API, FourSquare API",
+      "url": "https://github.com/mairamartinsk/neighbourhood-map",
+      "image": "./img/project-neighborhood-maps.jpg"
+    },
+    {
+      "name": "MyReads - Book Tracking App",
+      "desc": "React.js, React Router, Udacity's BooksAPI",
+      "url": "https://github.com/mairamartinsk/my-reads",
+      "image": "./img/project-my-reads.jpg"
+    },
+    {
+      "name": "Restaurant Reviews App",
+      "desc": "JS ES6, ServiceWorker, Leaflet.js, MapBox API",
+      "url": "https://github.com/mairamartinsk/restaurant-reviews",
+      "image": "./img/project-restaurant-reviews.jpg"
+    },
+    {
       "name": "Memory Card Game",
       "desc": "CSS Grid, JavaScript ES6, Babel, Polyfill",
       "url": "https://github.com/mairamartinsk/memory-game",
