@@ -97,6 +97,7 @@ p {
   justify-content: center;
   align-items: center;
 }
+
 .hero__title {
   font-family: "Libre Baskerville", serif;
   color: #f7f7f7;
@@ -134,6 +135,14 @@ p {
 
 .nav__link:hover {
   color: #fed900;
+}
+
+.nav--open {
+  max-height: 400px !important;
+}
+.nav--open .mobile__toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
 }
 
 /*************************************/
@@ -302,6 +311,8 @@ p {
   .quote {
     font-size: 1.5em;
   }
+
+  .navbar { width: 100%; }
 }
 
 @media screen and (min-width: 600px) {
