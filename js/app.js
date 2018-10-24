@@ -1,5 +1,6 @@
 function init() {
   mobileNav();
+  smoothScroll();
   getProjects();
 }
 
@@ -114,12 +115,22 @@ function getProjects() {
 function mobileNav() {
   const header = document.querySelector(".header");
   const menuIcon = document.querySelector(".mobile__toggle");
-  const navbar = document.querySelector(".navbar");
 
   menuIcon.addEventListener("click", function() {
     header.classList.contains("nav--open")
       ? header.classList.remove("nav--open")
       : header.classList.add("nav--open");
+  });
+}
+
+function smoothScroll() {
+  const navBar = document.querySelector(".navbar");
+
+  navBar.addEventListener("click", function(event) {
+    event.preventDefault();
+    const link = event.target.getAttribute("href");
+
+    document.querySelector(link).scrollIntoView({ behavior: "smooth" });
   });
 }
 
