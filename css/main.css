@@ -137,12 +137,18 @@ p {
   color: #fed900;
 }
 
-.nav--open {
-  max-height: 400px !important;
+.mobile__toggle {
+  display: none;
+  opacity: 0;
 }
-.nav--open .mobile__toggle {
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
+
+.mobile__toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #000;
+  display: block;
 }
 
 /*************************************/
@@ -312,7 +318,32 @@ p {
     font-size: 1.5em;
   }
 
-  .navbar { width: 100%; }
+  .mobile__toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0 1em;
+    opacity: 1;
+    transition: all 0.6s;
+  }
+
+  .navbar {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .nav--open .mobile__toggle {
+    transform: rotate(-90deg);
+  }
+
+  .nav--open .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 600px) {
