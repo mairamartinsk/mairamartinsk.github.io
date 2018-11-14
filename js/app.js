@@ -127,6 +127,8 @@ function smoothScroll() {
   const navBar = document.querySelector(".navbar");
 
   navBar.addEventListener("click", function(event) {
+    if (event.target.target) return;
+
     event.preventDefault();
     const link = event.target.getAttribute("href");
 
